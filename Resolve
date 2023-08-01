@@ -1,0 +1,17 @@
+connection.onCompletionResolve(
+	(item: CompletionItem): CompletionItem => {
+	// checkList是一个监听配置的列表，当我们选中的代码提示内容
+	// 在这个列表中时，这里就会进行一些处理。
+		if (checkList.includes(item.filterText += '')) {
+			if (!item.filterText) item.filterText = ''
+			// 如果item在监视列表之内的话需要进行处理
+			// checkEventMap就是对item的newText进行了编辑
+			// 从而对插入的文本进行一些动态的控制，比如插入
+			// 这段文本需要导入某个包
+			checkEventMap[item.filterText](item, DP)
+		}
+		return item;
+	}
+————————————————
+版权声明：本文为CSDN博主「Mino.66」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/luoluoyang23/article/details/125027963
