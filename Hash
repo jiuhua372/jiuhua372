@@ -1,0 +1,7 @@
+/ Set up the input parameters 
+Vector parameters = new Vector(); 
+Hashtable ht = new Hashtable(); 
+ht.put("apiContext", apiContext); 
+ht.put("contentId", new Integer(1001)); 
+ht.put("campaignId", new Integer(1000)); 
+ht.put(“isSkipTrial? Boolean.TRUE); 
