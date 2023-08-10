@@ -1,0 +1,5 @@
+findmax = lambda x,y: x if x > y else y 
+
+findmax(5,14)
+
+> 14 or  max(5,14)
