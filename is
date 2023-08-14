@@ -1,0 +1,1 @@
+#include<stdio.h>void swap(int *px, int *py){ int temp; temp = *px; *px = *py; *py =temp;}int main(int argc,char **argv) { int x = 1, y = 2; printf("x,y is %d,%d\n",x,y); swap(&x,&y); /* int *px = &x; int *py = &y; swap(px,py); */ printf("x,y is %d,%d\n",x,y 
